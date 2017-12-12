@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1 User Summary
+  a(class='button' href='/') HomePage 
+  each user in users
+    h3 User Name:  #{user.name}
+    h4 Email: #{user.email}
+    h4 Favorite Book: #{user.favoriteBook}
+    h4 Password: #{user.password} <hr>
+    
+      
+
+
